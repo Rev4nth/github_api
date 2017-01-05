@@ -32,4 +32,4 @@ def profile(request):
         parsedData.append(userData)
         return render(request, 'app/profile.html', {'data' : parsedData})
     else :
-        return HttpResponse(request, 'app/profile.html')
+        return render(request, 'app/profile.html')
